@@ -10,13 +10,13 @@
             Text="T1 Async"
             Grid.Row="0"
             Command="{Binding TestSomethingCommand}"
-            HorizontalOptions="Center" />
+        />
 
         <Button
             Text="T2"
             Grid.Row="1"
             Command="{Binding TestMoreCommand}"
-            HorizontalOptions="Center" />
+        />
     </Grid>
 
 </ContentPage>
