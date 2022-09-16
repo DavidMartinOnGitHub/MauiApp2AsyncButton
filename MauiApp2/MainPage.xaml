@@ -5,17 +5,24 @@
              x:DataType="viewmodel:MainPageViewModel"
              x:Class="MauiApp2.MainPage">
 
-    <Grid RowDefinitions="50,50,*">
+    <Grid RowDefinitions="50,50,50,*">
         <Button
             Text="T1 Async"
+            x:Name="T1"
             Grid.Row="0"
             Command="{Binding TestSomethingCommand}"
         />
 
         <Button
             Text="T2"
+            x:Name="T2"
             Grid.Row="1"
             Command="{Binding TestMoreCommand}"
+        />
+        <Button
+            Text="Properties"
+            Grid.Row="2"
+            Clicked="OnClickedProperties"
         />
     </Grid>
 
